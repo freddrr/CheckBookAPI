@@ -7,7 +7,7 @@ require('dotenv').config();
 const PORT = process.env.PORT;
 
 app.get("/api", (req, res) => {
-    res.json({fruits: ["banana", "orange", "watermelon"]});
+    res.json({fruits: ["banana", "orange", "watermelon", "avocado"]});
 })
 
 app.listen(PORT, () => {
