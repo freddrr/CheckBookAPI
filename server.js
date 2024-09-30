@@ -30,7 +30,7 @@ app.get("/getUserBalance", async (req, res) => {
         resultSet.recordset.forEach(row => {
             userBalance = row.UserBalance;
         })
-        res.json({"User's Balance": `${userBalance}`});
+        res.json({"UserBalance": `${userBalance}`});
     } catch(err) {
         console.log(err.message);
     }
