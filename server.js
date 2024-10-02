@@ -45,6 +45,8 @@ app.put("/addTransaction", async (req, res) => {
         console.log("Made it here");
         var poolConnection = await sql.connect(config);
         console.log("transaction connection worked");
+        console.log(req.body.Amount);
+        console.log(req.body.Category);
         let ts = Date.now();
 
         let date_time = new Date(ts);
