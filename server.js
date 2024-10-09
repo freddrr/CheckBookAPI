@@ -40,7 +40,7 @@ app.get("/getUserBalance", async (req, res) => {
     }
 })
 
-app.put("/addTransaction", async (req, res) => {
+app.post("/addTransaction", async (req, res) => {
     try {
         console.log("Made it here");
         var poolConnection = await sql.connect(config);
